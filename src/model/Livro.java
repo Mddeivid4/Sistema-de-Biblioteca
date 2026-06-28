@@ -1,5 +1,7 @@
 package model;
 
+import exception.LivroIndisponivelException;
+
 public class Livro {
 	private String titulo;
 	private String autor;
@@ -30,7 +32,7 @@ public class Livro {
 	}
 
 	//Adicionar Exception para caso não tenha quantidade disponivel
-	public void Emprestar(String titulo) {
+	public void Emprestar(String titulo) throws LivroIndisponivelException {
 		if(quantidade > 0) {
 			quantidade -= 1;
 		}
