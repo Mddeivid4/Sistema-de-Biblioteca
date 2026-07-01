@@ -7,6 +7,13 @@ public class Livro {
 	private String autor;
 	private int quantidade;
 	
+	public Livro(String titulo, String autor) {
+		super();
+		this.titulo = titulo;
+		this.autor = autor;
+		this.quantidade = 10;
+	}
+
 	public String getTitulo() {
 		return titulo;
 	}
@@ -30,15 +37,12 @@ public class Livro {
 	public void setQuantidade(int quantidade) {
 		this.quantidade = quantidade;
 	}
-
-	//Adicionar Exception para caso não tenha quantidade disponivel
-	public void Emprestar(String titulo) throws LivroIndisponivelException {
-		if(quantidade > 0) {
-			quantidade -= 1;
-		}
+	
+	@Override
+	public String toString() {
+		return titulo ;
 	}
 	
-	public void Devolver(String titulo) {
-		quantidade += 1;
-	}
+	
+	
 }

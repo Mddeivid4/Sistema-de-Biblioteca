@@ -5,8 +5,7 @@ import interfaces.Notificavel;
 public class UsuarioComum extends Usuario implements Notificavel{
 	
 	public UsuarioComum(String nome, int id) {
-		super.nome = nome;
-		super.id = id;
+		super(nome, id);
 	}
 	
 	@Override
