@@ -34,14 +34,13 @@ Simular o funcionamento básico de uma biblioteca, permitindo o cadastro de livr
 ## Estrutura do projeto
 
 text
-```src/
-│
-├── main/
-├── model/
-├── service/
-├── interfaces/
-└── exception/
-```
+src/
+  main/
+  model/
+  service/
+  interfaces/
+  exception/
+
 
 ## Tecnologias utilizadas
 
